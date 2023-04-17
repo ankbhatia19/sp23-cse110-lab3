@@ -88,10 +88,78 @@
             </ol>
         </section>
         <hr>
-
+        <section>
+            <h2>Action Items</h2>
+            <ol>
+                <li>Learn how to use RegEx</li>
+                <li>Submit Ice Cream survey</li>
+            </ol>
+        </section>
+        <hr>
     </div>
 </main>
 <footer>
-    Copyright <i>Ankit's Amazing Company</i> 2023. All rights reserved.</i>
+    Copyright <i>Ankit's Amazing Company</i> 2023. All rights reserved.
 </footer>
+<hr>
+<h1>Ice cream!</h1>
+<form>
+    <fieldset>
+        <legend>User Data:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+    </fieldset>
+
+    <fieldset>
+        <p>Choose your favorite flavor out of these:</p>
+        <input type="radio" id="vanilla" name="fav_language" value="Vanilla">
+        <label for="vanilla">Vanilla</label><br>
+        <input type="radio" id="mint" name="fav_language" value="Mint Chip">
+        <label for="mint">Mint Chip</label><br>
+        <input type="radio" id="chocolate" name="fav_language" value="Chocolate">
+        <label for="chocolate">Chocolate</label>
+    </fieldset>
+
+    <fieldset>
+        <p>Which of these flavors would you choose to eat?</p>
+        <input type="checkbox" id="cookies" name="cookies" value="CookiesnCream">
+        <label for="cookies"> Cookies and Cream</label><br>
+        <input type="checkbox" id="strawberry" name="strawberry" value="Strawberry">
+        <label for="strawberry"> Strawberry</label><br>
+        <input type="checkbox" id="rockyroad" name="rockyroad" value="RockyRoad">
+        <label for="rockyroad"> Rocky Road</label><br>
+    </fieldset>
+
+    <fieldset>
+        <label for="flavors">If you had to eat only one flavor for the rest of your life, what would it be?</label>
+        <br>
+        <select name="flavors" id="flavors">
+            <option value="cakebatter">Cake Batter</option>
+            <option value="coconut">Coconut</option>
+            <option value="butterpecan">Butter Pecan</option>
+            <option value="butterscotch">Butterscotch</option>
+        </select>
+        <datalist id="datalistflavors">
+            <option value="Cake Batter">
+            <option value="Coconut">
+            <option value="Butter Pecan">
+            <option value="Butterscotch">
+        </datalist>
+    </fieldset>
+
+    <fieldset>
+        <p><label for="submission">Other preferred ice cream flavors:</label></p>
+        <textarea id="submission" name="submission" rows="4" cols="50">Coffee, Salted Caramel, Pistachio</textarea>
+
+    </fieldset>
+    <fieldset>
+        <legend>Submission:</legend>
+        <br>
+        <label for="day">Date:</label>
+        <input type="date" id="day" name="day"><br>
+        <button type="button" onclick="alert('Your submission has been received. Thank you!')">Submit</button>
+    </fieldset>
+</form>
 </html>
