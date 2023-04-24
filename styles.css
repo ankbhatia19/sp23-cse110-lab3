@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
 
-body {
+/* Set document wide colors */
+* {
     background-color: #2e3440;
     color: #d8dee9;
-    margin: 30px 30px 30px 30px;
-    font-family: 'Prompt', sans-serif;
 }
 
+body {
+    margin: 30px 30px 30px 30px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
 
 /* unvisited link */
 a:link { color: #81a1c1; }
