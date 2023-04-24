@@ -7,6 +7,7 @@ body {
     font-family: 'Prompt', sans-serif;
 }
 
+
 /* unvisited link */
 a:link { color: #81a1c1; }
 
@@ -30,6 +31,27 @@ a:active { color: cornflowerblue;}
     height: 100px;
     max-height: 200px;
     max-width: 200px;
+}
+
+@media (max-width: 1250px) {
+    #logo img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        /* Make logo smaller for smaller screens */
+        width: 75px;
+        height: 75px;
+        max-height: 100px;
+        max-width: 100px;
+    }
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 fieldset {
@@ -60,6 +82,14 @@ footer {
     text-decoration: none;
 }
 
+#meeting-notes {
+    display: grid;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+}
+
 .meetinginfo{
     border-style: solid;
     border-color: #81a1c1;
@@ -73,7 +103,7 @@ footer {
 .entry {
     /* Add some padding around each minutes entry */
     padding: 15px 15px 15px 15px;
-    display: grid;
+    display: block;
 }
 
 .icecream {
