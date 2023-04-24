@@ -1,24 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
 body {
     background-color: #2e3440;
     color: #d8dee9;
+    margin: 30px 30px 30px 30px;
+    font-family: 'Prompt', sans-serif;
 }
 
 /* unvisited link */
-a:link {
-    color: #81a1c1;
-}
+a:link { color: #81a1c1; }
 
 /* visited link */
-a:visited {
-    color: rgb(180, 142, 173);
-}
+a:visited { color: rgb(180, 142, 173); }
 
 /* mouse over link */
-a:hover {
-    color: hsl(179, 25%, 65%);
-}
+a:hover { color: hsl(179, 25%, 65%); }
 
 /* selected link */
-a:active {
-    color: cornflowerblue;
+a:active { color: cornflowerblue;}
+
+fieldset {
+    border-color: #81a1c1;
+    border-width: 2px;
+}
+
+hr {
+    color:#81a1c1;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.title {
+    /* Align text to center of webpage */
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.meetinginfo{
+    border-style: solid;
+    border-color: #81a1c1;
+    border-radius: 0%;
+    border-width: 2px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+
+.entry {
+    /* Add some padding around each minutes entry */
+    padding: 15px 15px 15px 15px
+}
+
+.icecream {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    text-align: center;
 }
